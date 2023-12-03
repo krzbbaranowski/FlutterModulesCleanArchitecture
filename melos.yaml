@@ -1,0 +1,10 @@
+name: flutter_modules
+
+packages:
+  - tracking
+  - parcel_details
+  - main
+
+scripts:
+  get:
+    exec: dart pub get
