@@ -9,6 +9,6 @@ class InitialModule extends Module {
 
   @override
   void routes(r) {
-    r.child('/splashScreen', child: (_) => SplashPage());
+    r.child('/splashScreen', child: (_) => const SplashPage());
   }
 }
