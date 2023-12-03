@@ -5,14 +5,10 @@ import 'package:flutter_modules/parcel_details/contracts/routes.dart';
 class TrackingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text("Tracking")),
-      backgroundColor: Colors.amber,
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () => Modular.to.pushNamed(ParcelRoutes.parcelDetails),
-          child: Text('Show parcel details.'),
-        ),
+    return Center(
+      child: ElevatedButton(
+        onPressed: () => Modular.to.pushNamed("/home/tracking/parcelDetails", forRoot: true),
+        child: Text('Show parcel details.'),
       ),
     );
   }
